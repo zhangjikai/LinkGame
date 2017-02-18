@@ -1,4 +1,4 @@
-package nec.soft.java.utils;
+package com.zhangjikai.linkgame.utils;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

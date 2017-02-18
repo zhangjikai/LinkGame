@@ -1,4 +1,4 @@
-package nec.soft.java.utils;
+package com.zhangjikai.linkgame.utils;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
@@ -8,7 +8,7 @@ import java.awt.Point;
 
 import javax.swing.JPanel;
 
-import nec.soft.java.share.SharedVar;
+import com.zhangjikai.linkgame.share.SharedVar;
 
 public class DrawHelper {
 

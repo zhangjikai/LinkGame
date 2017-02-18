@@ -1,15 +1,15 @@
-package nec.soft.java.frame;
+package com.zhangjikai.linkgame.frame;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 
 import javax.swing.JFrame;
 
-import nec.soft.java.share.SharedVar;
-import nec.soft.java.ui.ControlPanel;
-import nec.soft.java.utils.BackMusic;
-import nec.soft.java.utils.DrawHelper;
-import nec.soft.java.utils.ShowHelper;
+import com.zhangjikai.linkgame.share.SharedVar;
+import com.zhangjikai.linkgame.ui.ControlPanel;
+import com.zhangjikai.linkgame.utils.DrawHelper;
+import com.zhangjikai.linkgame.utils.ShowHelper;
+import com.zhangjikai.linkgame.utils.BackMusic;
 
 public class SingleGameFrame extends JFrame {
 

@@ -1,4 +1,4 @@
-package nec.soft.java.dialog;
+package com.zhangjikai.linkgame.dialog;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -21,7 +21,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
 
-import nec.soft.java.utils.FileHelper;
+import com.zhangjikai.linkgame.utils.FileHelper;
 
 public class Ranking {
 

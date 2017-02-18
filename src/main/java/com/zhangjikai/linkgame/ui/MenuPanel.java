@@ -1,4 +1,4 @@
-package nec.soft.java.ui;
+package com.zhangjikai.linkgame.ui;
 
 import java.awt.Cursor;
 import java.awt.Graphics;
@@ -10,15 +10,15 @@ import java.awt.event.MouseMotionListener;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-import nec.soft.java.dialog.ModeDialog;
-import nec.soft.java.dialog.Ranking;
-import nec.soft.java.dialog.SetDialog;
-import nec.soft.java.frame.MenuFrame;
-import nec.soft.java.frame.SingleGameFrame;
-import nec.soft.java.share.SharedVar;
-import nec.soft.java.utils.Constants;
-import nec.soft.java.utils.EffectSound;
-import nec.soft.java.utils.ImagesFactory;
+import com.zhangjikai.linkgame.dialog.SetDialog;
+import com.zhangjikai.linkgame.share.SharedVar;
+import com.zhangjikai.linkgame.utils.EffectSound;
+import com.zhangjikai.linkgame.dialog.ModeDialog;
+import com.zhangjikai.linkgame.dialog.Ranking;
+import com.zhangjikai.linkgame.frame.MenuFrame;
+import com.zhangjikai.linkgame.frame.SingleGameFrame;
+import com.zhangjikai.linkgame.utils.Constants;
+import com.zhangjikai.linkgame.utils.ImagesFactory;
 
 public class MenuPanel extends JPanel implements MouseListener, MouseMotionListener {
 

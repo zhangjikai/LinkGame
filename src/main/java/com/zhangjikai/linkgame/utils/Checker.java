@@ -1,4 +1,4 @@
-package nec.soft.java.utils;
+package com.zhangjikai.linkgame.utils;
 
 import java.util.LinkedList;
 import java.util.Queue;

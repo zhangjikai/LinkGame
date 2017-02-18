@@ -1,14 +1,14 @@
-package nec.soft.java.main;
+package com.zhangjikai.linkgame.main;
 
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
-import nec.soft.java.frame.MenuFrame;
-import nec.soft.java.share.SharedVar;
-import nec.soft.java.utils.Constants;
-import nec.soft.java.utils.FileHelper;
+import com.zhangjikai.linkgame.share.SharedVar;
+import com.zhangjikai.linkgame.frame.MenuFrame;
+import com.zhangjikai.linkgame.utils.Constants;
+import com.zhangjikai.linkgame.utils.FileHelper;
 
 import org.jvnet.substance.skin.SubstanceOfficeBlue2007LookAndFeel;
 

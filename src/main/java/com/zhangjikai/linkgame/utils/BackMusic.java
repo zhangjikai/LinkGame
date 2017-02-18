@@ -1,8 +1,6 @@
-package nec.soft.java.utils;
+package com.zhangjikai.linkgame.utils;
 
-import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 
 import javax.sound.midi.InvalidMidiDataException;
 import javax.sound.midi.MetaEventListener;
@@ -11,8 +9,6 @@ import javax.sound.midi.MidiSystem;
 import javax.sound.midi.MidiUnavailableException;
 import javax.sound.midi.Sequence;
 import javax.sound.midi.Sequencer;
-
-import nec.soft.java.utils.ImagesFactory;
 
 public class BackMusic implements Runnable, MetaEventListener{
 

@@ -1,9 +1,6 @@
-package nec.soft.java.utils;
+package com.zhangjikai.linkgame.utils;
 
 import java.awt.Image;
-import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 import javax.swing.ImageIcon;
 

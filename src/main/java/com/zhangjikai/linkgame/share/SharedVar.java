@@ -1,8 +1,8 @@
-package nec.soft.java.share;
+package com.zhangjikai.linkgame.share;
 
-import nec.soft.java.ui.DrawArea;
-import nec.soft.java.ui.TimePanel;
-import nec.soft.java.utils.Constants;
+import com.zhangjikai.linkgame.ui.TimePanel;
+import com.zhangjikai.linkgame.ui.DrawArea;
+import com.zhangjikai.linkgame.utils.Constants;
 
 public class SharedVar {
 

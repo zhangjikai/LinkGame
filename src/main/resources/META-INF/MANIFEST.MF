@@ -1,3 +1,3 @@
 Manifest-Version: 1.0
-Main-Class: nec.soft.java.main.Main
+Main-Class: com.zhangjikai.linkgame.main.Main
 

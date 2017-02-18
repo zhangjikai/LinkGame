@@ -1,4 +1,4 @@
-package nec.soft.java.dialog;
+package com.zhangjikai.linkgame.dialog;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -12,10 +12,10 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.border.TitledBorder;
 
-import nec.soft.java.share.SharedVar;
-import nec.soft.java.utils.Constants;
-import nec.soft.java.utils.FileHelper;
-import nec.soft.java.utils.ShowHelper;
+import com.zhangjikai.linkgame.share.SharedVar;
+import com.zhangjikai.linkgame.utils.Constants;
+import com.zhangjikai.linkgame.utils.FileHelper;
+import com.zhangjikai.linkgame.utils.ShowHelper;
 
 public class SetDialog extends JDialog implements ActionListener {
 

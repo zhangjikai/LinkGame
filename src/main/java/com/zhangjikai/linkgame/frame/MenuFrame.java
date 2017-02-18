@@ -1,11 +1,11 @@
-package nec.soft.java.frame;
+package com.zhangjikai.linkgame.frame;
 
 import java.awt.BorderLayout;
 
 import javax.swing.JFrame;
 
-import nec.soft.java.ui.MenuPanel;
-import nec.soft.java.utils.ShowHelper;
+import com.zhangjikai.linkgame.ui.MenuPanel;
+import com.zhangjikai.linkgame.utils.ShowHelper;
 
 public class MenuFrame extends JFrame{
 

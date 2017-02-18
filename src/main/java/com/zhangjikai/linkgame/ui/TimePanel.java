@@ -1,4 +1,4 @@
-package nec.soft.java.ui;
+package com.zhangjikai.linkgame.ui;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -10,10 +10,10 @@ import java.awt.RenderingHints;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-import nec.soft.java.share.SharedVar;
-import nec.soft.java.utils.Constants;
-import nec.soft.java.utils.DrawHelper;
-import nec.soft.java.utils.ImagesFactory;
+import com.zhangjikai.linkgame.share.SharedVar;
+import com.zhangjikai.linkgame.utils.Constants;
+import com.zhangjikai.linkgame.utils.DrawHelper;
+import com.zhangjikai.linkgame.utils.ImagesFactory;
 
 public class TimePanel extends JPanel {
 	private int life_length = 500;
