@@ -41,10 +41,8 @@ public class BackMusic implements Runnable, MetaEventListener{
 	 * 读取midi文件
 	 */
 	public void loadMidi(String filename) throws IOException, InvalidMidiDataException {
-		//URL url = ImagesFactory.class.getResource(midiFile);
 		ClassLoader classLoader = FileHelper.class.getClassLoader();
-		File file = new File(classLoader.getResource(midiFile).getFile());
-		sequence = MidiSystem.getSequence(file.toURI().toURL());
+		sequence = MidiSystem.getSequence(classLoader.getResource(midiFile));
 	}
 
 	public void play() {

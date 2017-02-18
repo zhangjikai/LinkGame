@@ -16,8 +16,17 @@
             <version>4.3</version>
         </dependency>-->
 
+        <dependency>
+            <groupId>org.jvnet.substance</groupId>
+            <artifactId>substance</artifactId>
+            <version>4.3</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/substance-4.3.jar</systemPath>
+        </dependency>
 
     </dependencies>
+
+
 
     <build>
         <sourceDirectory>src/main/java</sourceDirectory>
@@ -32,7 +41,17 @@
                     <include>**/*.xml</include>
                 </includes>
             </resource>
+
+            <!--<resource>
+                <targetPath>lib/</targetPath>
+                <directory>lib/</directory>
+                <includes>
+                    <include>**/*.jar</include>
+                </includes>
+            </resource>-->
         </resources>
+
+
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -40,8 +59,44 @@
                 <configuration>
                     <source>1.7</source>
                     <target>1.7</target>
+                    <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
+
+            <!-- 打包  -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.5.5</version>
+
+
+                <configuration>
+                    <descriptors>
+                        <descriptor>assembly.xml</descriptor>
+                    </descriptors>
+                    <archive>
+                        <manifest>
+                            <mainClass>
+                                nec.soft.java.main.Main
+                            </mainClass>
+                        </manifest>
+                    </archive>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+
         </plugins>
     </build>
 </project>

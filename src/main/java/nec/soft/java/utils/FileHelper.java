@@ -8,7 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class FileHelper {
-	public static String folder = "";
+	public static String folder = "config";
 
 	private static void checkFolder() {
 		File file = new File(folder);
@@ -23,8 +23,11 @@ public class FileHelper {
 
 	public static void writeToFile(String fileName, String message, boolean append) {
 		try {
+            //ClassLoader classLoader = FileHelper.class.getClassLoader();
+            //File file = new File(classLoader.getResource(fileName).getFile());
 			checkFolder();
-			File file = new File(folder + "/" + fileName);
+			File file = new File(folder + File.separator + fileName);
+			System.out.println(fileName);
 			if (!file.exists())
 				file.createNewFile();
 			FileWriter writer = new FileWriter(file, append);
@@ -39,9 +42,11 @@ public class FileHelper {
 
 	public static String readFromFile(String fileName) {
 		try {
-			//checkFolder();
-			ClassLoader classLoader = FileHelper.class.getClassLoader();
-			File file = new File(classLoader.getResource(fileName).getFile());
+
+			//ClassLoader classLoader = FileHelper.class.getClassLoader();
+			//File file = new File(classLoader.getResource(fileName).getFile());
+			checkFolder();
+			File file = new File(folder + File.separator + fileName);
 			if (!file.exists())
 				file.createNewFile();
 			BufferedReader br = new BufferedReader(new FileReader(file));

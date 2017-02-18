@@ -19,14 +19,12 @@ private static Image[] images = new Image[100];
 		if (images[index] == null) {
 			//URL url = ImagesFactory.class.getResource("images/" + index + ".png");
 			ClassLoader classLoader = FileHelper.class.getClassLoader();
-			File file = new File(classLoader.getResource("images/" + index + ".png").getFile());
+
+
 			ImageIcon icon = null;
-			try {
-				icon = new ImageIcon(file.toURI().toURL());
-			} catch (MalformedURLException e) {
-				e.printStackTrace();
-			}
+			icon = new ImageIcon(classLoader.getResource("images/" + index + ".png"));
 			images[index] = icon.getImage();
+
 		}
 		return images[index];
 	}

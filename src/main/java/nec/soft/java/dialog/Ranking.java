@@ -43,7 +43,7 @@ public class Ranking {
 	}
 
 	public void clear() {
-		FileHelper.writeToFile("ranking.ini", "");
+		FileHelper.writeToFile("ranking.ini", "", false);
 	}
 
 	public void show() {
@@ -152,11 +152,13 @@ public class Ranking {
 			ArrayList<record> rec = new ArrayList<record>();
 
 			String content = FileHelper.readFromFile("ranking.ini");
-			if (content != null && !content.equals("")) {
-				String[] sp = content.split(",");
-				for (int i = 0; i < sp.length; i = i + 3) {
-					if (dif == Integer.parseInt(sp[i])) {
-						rec.add(new record(sp[i + 2], Integer.parseInt(sp[i + 1])));
+			if (content != null ) {
+				if(!content.equals("")) {
+					String[] sp = content.split(",");
+					for (int i = 0; i < sp.length; i = i + 3) {
+						if (dif == Integer.parseInt(sp[i])) {
+							rec.add(new record(sp[i + 2], Integer.parseInt(sp[i + 1])));
+						}
 					}
 				}
 				Collections.sort(rec);
@@ -180,8 +182,9 @@ public class Ranking {
 				table.setGridColor(Color.BLUE);
 				table.setSize(centerPanel.getWidth(), centerPanel.getHeight());
 				table.setRowSelectionAllowed(false);
-				setVisible(true);
+
 			}
+			setVisible(true);
 		}
 
 		class record implements Comparable<record> {
