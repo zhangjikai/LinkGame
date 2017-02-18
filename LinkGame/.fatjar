@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Sun May 12 05:35:30 CST 2013
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=true
+jarname=LinkGame_fat.jar
+manifest.mergeall=true
+manifest.mainclass=nec.soft.java.main.Main
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=<jar|mysql-connector-java-5.1.19-bin.jar>
+includes=
